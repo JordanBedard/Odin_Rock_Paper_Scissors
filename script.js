@@ -102,8 +102,6 @@ function game(playerOption, computerOption) {
         displayPlayerChoice(playerOption);
         displayComputerChoice(computerOption);
         displayRoundResult(playerOption, computerOption);
-        // let roundResult = round(playerOption, computerOption);
-        // console.log(roundResult);
         displayScore();
     } else {
         alert(displayGameResult());
@@ -112,7 +110,6 @@ function game(playerOption, computerOption) {
 
 // Display Round Result
 function displayRoundResult(playerOption, computerOption) {
-    // Ou bien dans game avec paramètres à l'intérieur
     let roundResult = round(playerOption, computerOption);
     // Target DOM Elements
     let displayRoundResult = document.querySelector(".title");
